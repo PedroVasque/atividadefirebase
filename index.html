@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BD3 - FIREBASE</title>
+    <link rel="stylesheet" href="style.css"> <!-- Importação do CSS -->
+</head>
+<body>
+    <h1>WEB APP ALUNOS - FIREBASE: FIRESTORE</h1>
+    <div class="content">
+        <form id="add-student-form">
+            <input type="text" name="nome" placeholder="Nome do aluno">
+            <input type="text" name="cpf" placeholder="CPF">
+            <input type="text" name="rg" placeholder="RG">
+            <input type="text" name="telefone_aluno" placeholder="Telefone do aluno">
+            <input type="text" name="telefone_responsavel" placeholder="Telefone do responsável">
+            <input type="email" name="email" placeholder="Email">
+            <input type="date" name="data_nascimento" placeholder="Data de nascimento">
+            <button>Cadastrar</button>
+        </form>
+        <ul id="student-list"></ul>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.0.3/firebase-firestore.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
